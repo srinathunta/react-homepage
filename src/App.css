@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.app__container {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.full__height {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__home__container {
+  height: 100vh;
+  background: #0b1d26 url(assets/hero-bg.jpg) 0 0 no-repeat;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__home__wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 99;
+}
+.home__heading {
+  margin: 20px 0px;
+  color: var(--color-white);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.scroll-down {
+  text-align: left;
+  color: var(--color-white);
+}
+.app__home__container:before {
+  content: "";
+  background: #000000;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+.scroll-down p {
+  display: flex;
+  align-items: center;
+}
+.scroll-down p svg {
+  margin-left: 5px;
+}
+.app__home__container {
+  box-shadow: inset 0 -10px 100px 5px #0b1d26;
+  position: relative;
+}
+.follow-us p {
+  margin-bottom: 10px;
+}
+
+.follow-us {
+  position: absolute;
+  left: 0;
+  margin-left: 5%;
+  display: flex;
+  font-family: var(--font-alt);
+  font-size: 14px;
+  align-items: center;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
-
-.App-link {
-  color: #61dafb;
+.follow-text {
+  color: var(--color-white);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+div#hikerlevel {
+  margin-top: -20px;
+}
+@media (max-width: 767px) {
+  .app__container {
+    flex-direction: column;
+    margin-bottom: 40px;
   }
-  to {
-    transform: rotate(360deg);
+  .full__height {
+    height: 100%;
+  }
+  .follow-us {
+    display: none;
   }
 }
