@@ -1,3 +1,7 @@
+A simple Homepage created using react.
+visit site - https://nifty-archimedes-73d5ea.netlify.app/
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
