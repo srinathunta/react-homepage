@@ -1,5 +1,5 @@
-A simple Homepage created using react. </br>
-visit site - https://nifty-archimedes-73d5ea.netlify.app/
+A simple and responsive Homepage created using react. </br>
+visit site - https://mntn-frontpage.netlify.app/
 
 
 # Getting Started with Create React App
